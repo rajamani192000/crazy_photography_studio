@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "crazy-photography-studio": {
+      "hosting": {
+        "ngx-admin-demo": [
+          "crazy-photography-studio"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "crazy-photography-studio"
+  }
+}
