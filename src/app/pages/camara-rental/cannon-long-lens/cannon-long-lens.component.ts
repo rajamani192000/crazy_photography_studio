@@ -1,17 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, AbstractControl } from '@angular/forms';
+import { AbstractControl, FormBuilder, FormGroup } from '@angular/forms';
 import { Location } from '@angular/common';
 @Component({
-  selector: 'ngx-camara-details',
-  templateUrl: './camara-details.component.html',
-  styleUrls: ['./camara-details.component.scss']
+  selector: 'ngx-cannon-long-lens',
+  templateUrl: './cannon-long-lens.component.html',
+  styleUrls: ['./cannon-long-lens.component.scss']
 })
-export class CamaraDetailsComponent implements OnInit {
+export class CannonLongLensComponent implements OnInit {
   locationList: any = [{ value: "Dindigul City" }]
-  ProductData: any = [{ value: 1, text: "200D (18-55MM Single Lens)" }, { value: 2, text: "200D (18-55MM and 55-250MM Dual Lens)" }]
-  dayslist: any = [{ value: 1, text: "0-1 Day (Rs.600)", single: 600, dual: 900 }, { value: 2, text: "2-4 Days Rs.(550)", single: 550, dual: 850 }, { value: 3, text: "5-7 Days Rs.(500)", single: 500, dual: 800 }];
-
-
+  ProductData: any = [{ value: 1, text: "Canon 55-250MM Lens" }]
+  dayslist: any = [{ value: 1, text: "0-1 Day (Rs.400)", single: 400, dual: 400 }, { value: 2, text: "2-4 Days Rs.(350)", single: 350, dual: 350 }, { value: 3, text: "5-7 Days Rs.(300)", single: 300, dual: 300 }];
   bookForm: FormGroup;
   display: any;
   dateError: boolean = false;
@@ -69,7 +67,7 @@ export class CamaraDetailsComponent implements OnInit {
         const oneDay = 24 * 60 * 60 * 1000; // Milliseconds in a day
         this.duration = Math.round((this.toDate - this.fromDate) / oneDay);
         this.ratePerDay = this.duration * this.ratePerDay;
-        const advanceAmt = this.productValue == 1 ? 200 : 300;
+        const advanceAmt = this.productValue == 1 ? 200 : 200;
         this.advanceAmount = advanceAmt * this.duration;
       }
 
@@ -77,7 +75,7 @@ export class CamaraDetailsComponent implements OnInit {
     }
     if (this.fromDate == null) {
       this.ratePerDay = this.productValue == 1 ? this.singlePrice : this.dualPrice;
-      const advanceAmt = this.productValue == 1 ? 200 : 300;
+      const advanceAmt = this.productValue == 1 ? 200 : 200;
       this.advanceAmount = advanceAmt * this.duration;
     }
   }

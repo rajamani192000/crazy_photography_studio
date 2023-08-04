@@ -29,6 +29,11 @@ ngx-select span.ng-star-inserted {
   color: #3366ff;
 }
 
+.row{
+  padding-left: 15px !important;
+  padding-right:15px !important;
+}
+
 .modal-content{
   width: 124% !important;
 }
@@ -40,8 +45,4 @@ ngx-select span.ng-star-inserted {
 #content2 {
   overflow: hidden;
   height: 4em;
-}
-.row{
-  padding-left: 15px !important;
-  padding-right:15px !important;
 }

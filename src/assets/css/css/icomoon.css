@@ -11743,12 +11743,6 @@ li.listar-rss a {
     position: relative;
 }
 
-.form-group {
-    width: 100%;
-    float: left;
-    margin: 0 0 20px;
-}
-
 .listar-formsearchlisting .form-group i {
     padding: 0;
     width: 45px;
@@ -12393,7 +12387,7 @@ ul.checkout-bar li:nth-child(6):before {
     width: 146px;
 }
 
-textarea,
+/* textarea,
 select,
 .listar-select select,
 .form-control,
@@ -12433,7 +12427,7 @@ input[type="color"],
     border-radius: 50px !important;
     -webkit-box-sizing: border-box !important;
     box-sizing: border-box !important;
-}
+} */
 
 .input-group .form-control:first-child,
 .input-group-addon:first-child,

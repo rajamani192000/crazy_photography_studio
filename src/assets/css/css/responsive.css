@@ -9,6 +9,12 @@
         position: absolute;
         top: 50%;
     }
+    .modal-content{
+      width: 100% !important;
+      }
+      iframe {
+        width: 320px !important;
+    }
     .navbar {
         margin-top: 0px;
     }
@@ -26,6 +32,12 @@
 }
 
 @media only screen and (min-width: 959px) and (max-width: 1024px) {
+  .modal-content{
+    width: 100% !important;
+    }
+    iframe {
+      width: 320px !important;
+  }
     .languages {
         position: absolute;
         top: 0px;
@@ -383,6 +395,12 @@
     header .container {
         width: 100%;
     }
+    .modal-content{
+    width: 100% !important;
+    }
+    iframe {
+      width: 320px !important;
+  }
     header nav>ul>li a {
         padding: 10px 7px;
     }
@@ -855,7 +873,7 @@ a.responsive-login-btn.btn {
     }
     .side-form {
         position: relative;
-        height: auto;
+        height: auto !important;
     }
     .side-form input#rent_from_date {
         height: 40px !important;
@@ -1817,6 +1835,12 @@ a.responsive-login-btn.btn {
     /*.listar-addnav ul {
     padding-right: 30px !important;
 }*/
+.modal-content{
+  width: 100% !important;
+  }
+  iframe {
+    width: 320px !important;
+}
     .listar-logo img {
         width: 108px !important;
     }
@@ -1832,6 +1856,12 @@ a.responsive-login-btn.btn {
     }
     .heading h2 span {
         background: none;
+    }
+    .modal-content{
+      width: 100% !important;
+      }
+      iframe {
+        width: 320px !important;
     }
     .menuBtn {
         display: block;
@@ -2510,6 +2540,12 @@ a.responsive-login-btn.btn {
     .product-home figure {
         position: relative;
         height: 205px;
+    }
+    .modal-content{
+      width: 100% !important;
+      }
+      iframe {
+        width: 320px !important;
     }
     .header-top form input[type='text'] {
         width: 83%;

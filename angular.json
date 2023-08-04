@@ -45,7 +45,8 @@
               "src/assets/css/css/ie.css",
               "src/assets/css/css/prettyPhoto.css",
               "src/assets/css/css/style-main.css",
-              "src/assets/css/css/tooltipster.css"
+              "src/assets/css/css/tooltipster.css",
+              "node_modules/ng-pick-datetime/assets/style/picker.min.css"
             ],
             "scripts": [
               "node_modules/pace-js/pace.min.js",

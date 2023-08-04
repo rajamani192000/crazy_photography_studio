@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Location } from '@angular/common';
 @Component({
   selector: 'ngx-cam-home',
   templateUrl: './cam-home.component.html',
@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CamHomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(public location: Location) { }
   ngOnInit(): void {
 
     this.getdata();

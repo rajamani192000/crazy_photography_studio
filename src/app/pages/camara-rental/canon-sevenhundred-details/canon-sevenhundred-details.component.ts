@@ -1,17 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, AbstractControl } from '@angular/forms';
+import { AbstractControl, FormBuilder, FormGroup } from '@angular/forms';
 import { Location } from '@angular/common';
 @Component({
-  selector: 'ngx-camara-details',
-  templateUrl: './camara-details.component.html',
-  styleUrls: ['./camara-details.component.scss']
+  selector: 'ngx-canon-sevenhundred-details',
+  templateUrl: './canon-sevenhundred-details.component.html',
+  styleUrls: ['./canon-sevenhundred-details.component.scss']
 })
-export class CamaraDetailsComponent implements OnInit {
+export class CanonSevenhundredDetailsComponent implements OnInit {
   locationList: any = [{ value: "Dindigul City" }]
-  ProductData: any = [{ value: 1, text: "200D (18-55MM Single Lens)" }, { value: 2, text: "200D (18-55MM and 55-250MM Dual Lens)" }]
-  dayslist: any = [{ value: 1, text: "0-1 Day (Rs.600)", single: 600, dual: 900 }, { value: 2, text: "2-4 Days Rs.(550)", single: 550, dual: 850 }, { value: 3, text: "5-7 Days Rs.(500)", single: 500, dual: 800 }];
-
-
+  ProductData: any = [{ value: 1, text: "700D (18-55MM Single Lens)" }, { value: 2, text: "700D (18-55MM and 55-250MM Dual Lens)" }]
+  dayslist: any = [{ value: 1, text: "0-1 Day (Rs.500)", single: 500, dual: 800 }, { value: 2, text: "2-4 Days Rs.(450)", single: 450, dual: 750 }, { value: 3, text: "5-7 Days Rs.(400)", single: 400, dual: 700 }];
   bookForm: FormGroup;
   display: any;
   dateError: boolean = false;

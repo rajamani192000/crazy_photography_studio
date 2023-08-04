@@ -2672,7 +2672,6 @@ article p {
 .product-type {
     border-bottom: 1px solid #e8e8e8;
     padding-bottom: 10px;
-    margin-bottom: 10px;
     margin-top: 0px;
 }
 
@@ -4903,6 +4902,14 @@ input[type=number]::-webkit-inner-spin-button {
     position: relative;
 }
 
+
+.dropdown {
+  position: relative;
+  display: block !important;
+}
+
+
+
 .wrapper-dropdown-3 .dropdown {
     /* Size & position */
     /*    position: absolute;
@@ -6257,6 +6264,12 @@ select {
             margin-top: -70px;
             height: 70px;
         }
+        .modal-content{
+          width: 100% !important;
+          }
+          iframe {
+            width: 320px !important;
+        }
     }
     /* --------------------------------
         Intro Section:
@@ -6279,6 +6292,21 @@ select {
         .cd-hero {
             height: 400px;
         }
+        .modal-content{
+          width: 100% !important;
+          }
+          iframe {
+            width: 320px !important;
+        }
+    }
+
+    @media screen and (max-width: 768px){
+      .modal-content{
+        width: 100% !important;
+        }
+        iframe {
+          width: 320px !important;
+      }
     }
     @media only screen and (min-width: 1024px) {
         .cd-hero {
@@ -6996,12 +7024,6 @@ section.main-banner .tab {
     background: #000
 }
 
-/* The container <div> - needed to position the dropdown content */
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
 
 /* Dropdown Content (Hidden by Default) */
 
@@ -7843,14 +7865,18 @@ ul.list-form {
 .side-form .selectBox-dropdown {
     height: 36px !important
 }
-
-.side-form .form-control {
-    border-radius: 3px !important;
-    font-size: 13px !important;
-    height: 36px !important;
-    background: #fcfdff !important;
-    padding: 10px !important;
+.form-control-select a span{
+  color: #3366ff !important;
 }
+.modal-header .close {
+  padding: 1rem 1rem 1rem 1rem;
+  margin: -1rem -1rem 0rem 34rem;
+}
+.required-span{
+  color:red;
+  float: left;
+}
+
 
 .side-form input#rent_from_date {
     border-radius: 3px !important;

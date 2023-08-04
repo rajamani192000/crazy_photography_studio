@@ -18,6 +18,11 @@
   position: absolute;
   top: 16px;
 }
+.dropdown {
+  position: relative;
+  display: inline-block !important;
+}
+
 
 .search-style {
   display: block !important;
